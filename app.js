@@ -116,6 +116,13 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  * Primary app routes.
  */
 app.get('/', homeController.index);
+app.get('/about', homeController.about);
+app.get('/biographies', homeController.biographies);
+app.get('/diy', homeController.diy);
+app.get('/donations', homeController.donations);
+app.get('/internships', homeController.internships);
+app.get('/sponsors', homeController.sponsors);
+app.get('/volunteer', homeController.volunteer);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);

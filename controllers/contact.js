@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'Mailgun',
   auth: {
-    user: process.env.MAILGUN_SMTP_LOGIN
+    user: process.env.MAILGUN_SMTP_LOGIN, /*added the comma*/
     pass: process.env.MAILGUN_SMTP_PASSWORD
   }
 });

@@ -1,17 +1,39 @@
 extends layout
 
 block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
-  hr
+  link(rel='stylesheet', href='/css/home.css')
+
+  .jumbotron.container-fluid
+    h1 What do we do?
+    h3 YO! provides street outreach, 
+    h3 drop-in services,
+    h3 case management, 
+    h3 and health and medical services 
+    h3 to youth on a referral on walk-in basis.
+    <br />
+  
   .row
+    
+    .col-sm-4
+      
+    .col-sm-4
+      h2.text-center How You Can Help
+      a.text-center.btn.btn-default(href='/#', role='button') Donate Funds »  
+      a.text-center.btn.btn-default(href='/volunteer', role='button') Volunteer »
+      a.text-center.btn.btn-default(href='/donations', role='button') Share Goods »
+
+    .col-sm-4  
+      
+
+  .row
+    .col-sm-6.text-center
+      h2 Hot Items Needed
+      p.strong Boy Shirts
+      p.strong Girl Shirts
+      p.strong Shoes and Slippahs
+      p.strong Tooth Brushes
     .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
+      h2 Eventbrite? How do they schedule events?
       p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
       p
         a.btn.btn-default(href='#', role='button') View details »

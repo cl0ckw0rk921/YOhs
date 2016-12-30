@@ -7,18 +7,46 @@
         span.icon-bar
         span.icon-bar
       a.navbar-brand(href='/')
-        i.fa.fa-cube
-        | Project name
+        i.fa.fa-hand-spock-o
+        | Youth Outreach (YO!)
     .collapse.navbar-collapse
       ul.nav.navbar-nav
         li(class=(title == 'Home') ? 'active' : undefined)
           a(href='/') Home
+        li(class=(title == 'Donations') ? 'active' : undefined)
+          a(href='/donations') Donations   
+        li(class=(title == 'Internships') ? 'active' : undefined)
+          a(href='/internships') Internships
+        li(class=(title == 'Volunteer') ? 'active' : undefined)
+          a(href='/volunteer') Volunteer  
+        
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown', href='/about')
+            | About Us
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li(class=(title == 'About') ? 'active' : undefined)
+              a(href='/about') About Us
+            li(class=(title == 'Biographies') ? 'active' : undefined)
+              a(href='/biographies') Biographies
+            li(class=(title == 'Contact') ? 'active' : undefined)
+              a(href='/contact') Contact
+        
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown', href='/about')
+            | Friends of YO
+            span.caret
+          ul.dropdown-menu(role='menu')               
+            li(class=(title == 'Sponsors') ? 'active' : undefined)
+              a(href='/sponsors') Sponsors
+            li(class=(title == 'DIY') ? 'active' : undefined)
+              a(href='/diy') DIY : Junior League
+        
         li(class=(title == 'API Examples') ? 'active' : undefined)
-          a(href='/api') API Examples
-        li(class=(title == 'Contact') ? 'active' : undefined)
-          a(href='/contact') Contact
+          a(href='/api') API
         li
           a(href='/status') Status
+          
       ul.nav.navbar-nav.navbar-right
         if !user
           li(class=(title == 'Login') ? 'active' : undefined)
