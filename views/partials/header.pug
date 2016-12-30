@@ -1,0 +1,70 @@
+.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/')
+        i.fa.fa-hand-spock-o
+        | Youth Outreach (YO!)
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li(class=(title == 'Home') ? 'active' : undefined)
+          a(href='/') Home
+        li(class=(title == 'Donations') ? 'active' : undefined)
+          a(href='/donations') Donations   
+        li(class=(title == 'Internships') ? 'active' : undefined)
+          a(href='/internships') Internships
+        li(class=(title == 'Volunteer') ? 'active' : undefined)
+          a(href='/volunteer') Volunteer  
+        
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown', href='/about')
+            | About Us
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li(class=(title == 'About') ? 'active' : undefined)
+              a(href='/about') About Us
+            li(class=(title == 'Biographies') ? 'active' : undefined)
+              a(href='/biographies') Biographies
+            li(class=(title == 'Contact') ? 'active' : undefined)
+              a(href='/contact') Contact
+        
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown', href='/about')
+            | Friends of YO
+            span.caret
+          ul.dropdown-menu(role='menu')               
+            li(class=(title == 'Sponsors') ? 'active' : undefined)
+              a(href='/sponsors') Sponsors
+            li(class=(title == 'DIY') ? 'active' : undefined)
+              a(href='/diy') DIY : Junior League
+        
+        li(class=(title == 'API Examples') ? 'active' : undefined)
+          a(href='/api') API
+        li
+          a(href='/status') Status
+          
+      ul.nav.navbar-nav.navbar-right
+        if !user
+          li(class=(title == 'Login') ? 'active' : undefined)
+            a(href='/login') Login
+          li(class=(title == 'Create Account') ? 'active' : undefined)
+            a(href='/signup') Create Account
+        else
+          li.dropdown(class=(title == 'Account Management') ? 'active' : undefined)
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              if user.profile.picture
+                img(src=user.profile.picture)
+              else
+                img(src=user.gravatar(60))
+              span= user.profile.name || user.email || user.id
+              i.caret
+            ul.dropdown-menu
+              li
+                a(href='/account') My Account
+              li.divider
+              li
+                a(href='/logout') Logout

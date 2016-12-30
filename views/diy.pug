@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/css/diy.css')
+
+  h1 Junior League's DIY methodology
+  #myCarousel.carousel.slide(data-ride='carousel')
+  // Indicators
+  ol.carousel-indicators
+    li.active(data-target='#myCarousel', data-slide-to='0')
+    li(data-target='#myCarousel', data-slide-to='1')
+    li(data-target='#myCarousel', data-slide-to='2')
+  // Wrapper for slides
+  .carousel-inner(role='listbox')
+    .item.active
+      img(src='/images/sunglasses.jpeg', alt='New York')
+      .carousel-caption
+        h3 New York
+        p The atmosphere in New York is lorem ipsum.
+    .item
+      img(src='/images/YOlogo.jpeg', alt='Chicago')
+      .carousel-caption
+        h3 Chicago
+        p Thank you, Chicago - A night we won't forget.
+    .item
+      img(src='/images/sunglasses.jpeg', alt='Los Angeles')
+      .carousel-caption
+        h3 LA
+        p Even though the traffic was a mess, we had the best time.
+  // Left and right controls
+  a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+    span.sr-only Previous
+  a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+    span.sr-only Next
+
+    h2 What to do now? What is a good way of describing the process?
+    p JS collapse seems like a good way to go.
