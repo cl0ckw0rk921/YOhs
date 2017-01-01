@@ -1,17 +1,28 @@
 extends layout
 
-block content
+block exterior
   link(rel='stylesheet', href='/css/home.css')
-
-  .jumbotron.container-fluid
-    h1 What do we do?
-    h3 YO! provides street outreach, 
-    h3 drop-in services,
-    h3 case management, 
-    h3 and health and medical services 
-    h3 to youth on a referral on walk-in basis.
-    <br />
   
+  style.
+    .parallax {
+    background-image: url('/images/YOlogo.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  .parallax <!--in-lined scroll effect-->
+    .jumbotron
+      h1 Youth Outreach (YO!)
+      h3 YO! provides street outreach, 
+      h3 drop-in services,
+      h3 case management, 
+      h3 and health and medical services 
+      h3 to youth on a referral on walk-in basis.
+      <br />
+
+block content
   .row
     
     .col-sm-4

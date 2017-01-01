@@ -1,13 +1,20 @@
-/* Home CSS*/
-.jumbotron
+.bg
 {
-  background-image: url('/images/YOlogo.jpeg');
-  background-size: cover;
-  /*background-position: center;*/
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 	margin-bottom: 0px;
-	background-position: 0% 25%;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	color: white;
 	text-shadow: black 0.3em 0.3em 0.3em;
-	padding: 100px 25px;
+	padding-left: 1%;
 }
+
+.jumbotron{
+	background: transparent;
+	color: #6A6868;
+	text-shadow: black 0.3em 0.3em 0.3em;
+	padding-left: 1%;
+}
+
