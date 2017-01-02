@@ -56,7 +56,7 @@ mongoose.connection.on('error', () => {
 });
 
 /**
- * Express configuration. 3000 for mac, 27017 for surface
+ * Express configuration. 3000 is standard, 27017 current
  */
 app.set('port', process.env.PORT || 27017);
 app.set('views', path.join(__dirname, 'views'));

@@ -3,58 +3,84 @@ extends layout
 block exterior
   link(rel='stylesheet', href='/css/home.css')
   
-  style.
-    .parallax {
-    background-image: url('/images/YOlogo.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
   .parallax <!--in-lined scroll effect-->
     .jumbotron
-      h1 Youth Outreach (YO!)
-      h3 YO! provides street outreach, 
-      h3 drop-in services,
-      h3 case management, 
-      h3 and health and medical services 
-      h3 to youth on a referral on walk-in basis.
-      <br />
+      h1 
+        span Youth Outreach (YO!)
+      h3 
+        span YO! provides street outreach, 
+      h3 
+        span drop-in services,
+      h3 
+        span case management, 
+      h3 
+        span and health and medical services 
+      h3 
+        span to youth on a referral or walk-in basis.
+      br
+      br  
+      a
+      #donations
+        form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+          input(type='hidden', name='cmd', value='_s-xclick')
+          |  
+          input(type='hidden', name='encrypted', value='-----BEGIN PKCS7-----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-----END PKCS7-----')
+          |  
+          input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+          |  
+          img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1') 
 
 block content
-  .row
-    
-    .col-sm-4
-      
-    .col-sm-4
-      h2.text-center How You Can Help
-      a.text-center.btn.btn-default(href='/#', role='button') Donate Funds »  
-      a.text-center.btn.btn-default(href='/volunteer', role='button') Volunteer »
-      a.text-center.btn.btn-default(href='/donations', role='button') Share Goods »
-
-    .col-sm-4  
-      
-
+  br
   .row
     .col-sm-6.text-center
       h2 Hot Items Needed
+      img.inkind(src='/images/sunglasses.jpeg', alt='Person 1')
       p.strong Boy Shirts
       p.strong Girl Shirts
       p.strong Shoes and Slippahs
       p.strong Tooth Brushes
+      p
+        a.btn.btn-default(href='#', role='button') See All Needs »
     .col-sm-6
-      h2 Eventbrite? How do they schedule events?
+      h2 Drop Off Items Here
+      p Hale Kipa (Example)
+      p 615 Piikoi Street, Suite 203
+      p Honolulu, Hawaii 96814 
+      #map(style='width:100%;height:200px')
+        script.
+          function myMap() {
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 10
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+        script(src='https://maps.googleapis.com/maps/api/js?callback=myMap')
+  hr
+
+  .row.text-center
+      h2 Add Eventbrite or something to help schedule events
+      p.lead Maybe add something else to help see what events are going on, or what events had happened previously
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
       p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
       p
         a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
+  
+  hr
+
+  .row      
+    .col-sm-4.text-center
+      h2 Testimonial 1
+      img.person(src='/images/sunglasses.jpeg', alt='Person 1')
       p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
+    .col-sm-4.text-center
+      h2 Testimonial 2
+      img.person(src='/images/sunglasses.jpeg', alt='Person 2')
       p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
+    .col-sm-4.text-center
+      h2 Testimonial 3
+      img.person(src='/images/sunglasses.jpeg', alt='Person 3')
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      
