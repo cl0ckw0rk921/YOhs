@@ -1,12 +1,12 @@
 {
-  "name": "hackathon-starter",
+  "name": "YOhs",
   "version": "4.3.0",
-  "description": "A boilerplate for Node.js web applications",
+  "description": "site for YOhs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/hackathon-starter.git"
+    "url": "https://github.com/cl0ckw0rk42/YOhs.git"
   },
-  "author": "Sahat Yalkabov",
+  "author": "Dan B.",
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
