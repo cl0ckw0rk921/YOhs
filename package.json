@@ -1,12 +1,12 @@
 {
-  "name": "YOhs",
+  "name": "hackathon-starter",
   "version": "4.3.0",
-  "description": "A landing page for YO! Hawaii",
+  "description": "A boilerplate for Node.js web applications",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cl0ckw0rk42/YOhs.git"
+    "url": "https://github.com/sahat/hackathon-starter.git"
   },
-  "author": "Dan Boggs",
+  "author": "Sahat Yalkabov",
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
@@ -42,7 +42,7 @@
     "node-linkedin": "^0.5.4",
     "node-sass-middleware": "^0.9.8",
     "nodemailer": "^2.6.4",
-    "passport": "^0.3.2",
+    "passport": "0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-github": "^1.1.0",
     "passport-google-oauth": "^1.0.0",
