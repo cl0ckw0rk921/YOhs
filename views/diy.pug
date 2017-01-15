@@ -3,37 +3,133 @@ extends layout
 block content
   link(rel='stylesheet', href='/css/diy.css')
 
-  h1 Junior League's DIY methodology
-  #myCarousel.carousel.slide(data-ride='carousel')
-  // Indicators
-  ol.carousel-indicators
-    li.active(data-target='#myCarousel', data-slide-to='0')
-    li(data-target='#myCarousel', data-slide-to='1')
-    li(data-target='#myCarousel', data-slide-to='2')
-  // Wrapper for slides
-  .carousel-inner(role='listbox')
-    .item.active
-      img(src='/images/sunglasses.jpeg', alt='New York')
-      .carousel-caption
-        h3 New York
-        p The atmosphere in New York is lorem ipsum.
-    .item
-      img(src='/images/YOlogo.jpeg', alt='Chicago')
-      .carousel-caption
-        h3 Chicago
-        p Thank you, Chicago - A night we won't forget.
-    .item
-      img(src='/images/sunglasses.jpeg', alt='Los Angeles')
-      .carousel-caption
-        h3 LA
-        p Even though the traffic was a mess, we had the best time.
-  // Left and right controls
-  a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-    span.sr-only Previous
-  a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-    span.sr-only Next
+  .row
+    .col-sm-12.text-center
+      h1 Junior League's DIY methodology
+      br
+      |  
+      a(href='#donations')
+        img.img-circle.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      h3 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  br
 
-    h2 What to do now? What is a good way of describing the process?
-    p JS collapse seems like a good way to go.
+  .row
+    .col-sm-6.text-center
+      h2 first thing of how we chose YO
+      br
+      |  
+      a(href='#donations')
+        img.img-circle.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    .col-sm-6.text-center
+      h2 second thing of how we chose to help YO
+      br
+      |  
+      a(href='#donations')
+        img.img-circle.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  br
+
+  .row
+    h1 How we organized the...
+    .col-sm-4.text-center
+      h2 overall event
+      br
+      |  
+      a(href='#donations')
+        img.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    .col-sm-4.text-center
+      h2 fund raising
+      br
+      |  
+      a(href='#donations')
+        img.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations  
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    .col-sm-4.text-center
+      h2 donations
+      br
+      |  
+      a(href='#donations')
+        img.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.             
+  br
+
+  .row
+    h1 Volunteer day we did...
+    .col-sm-4.text-center
+      h2 the clothing drive
+      br
+      |  
+      a(href='#donations')
+        img.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+    .col-sm-4.text-center
+      h2 food donations
+      br
+      |  
+      a(href='#donations')
+        img.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations  
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    .col-sm-4.text-center
+      h2 site beautification
+      br
+      |  
+      a(href='#donations')
+        img.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.             
+  br  
+
+  .row
+    .col-sm-12.text-center
+      h2 We even got a website put together for YO
+      br
+      |  
+      a(href='#donations')
+        img.img-circle.mainimage(src='/images/YOlogo.jpg', alt='Meals')
+      #donations
+      h4 This is who we are, and what we do! Heart emoji YO! 
+
+  //- h1 Junior League's DIY methodology
+  //- #myCarousel.carousel.slide(data-ride='carousel')
+  //- // Indicators
+  //- ol.carousel-indicators
+  //-   li.active(data-target='#myCarousel', data-slide-to='0')
+  //-   li(data-target='#myCarousel', data-slide-to='1')
+  //-   li(data-target='#myCarousel', data-slide-to='2')
+  //- // Wrapper for slides
+  //- .carousel-inner(role='listbox')
+  //-   .item.active
+  //-     img(src='/images/sunglasses.jpeg', alt='New York')
+  //-     .carousel-caption
+  //-       h3 New York
+  //-       p The atmosphere in New York is lorem ipsum.
+  //-   .item
+  //-     img(src='/images/YOlogo.jpeg', alt='Chicago')
+  //-     .carousel-caption
+  //-       h3 Chicago
+  //-       p Thank you, Chicago - A night we won't forget.
+  //-   .item
+  //-     img(src='/images/sunglasses.jpeg', alt='Los Angeles')
+  //-     .carousel-caption
+  //-       h3 LA
+  //-       p Even though the traffic was a mess, we had the best time.
+  //- // Left and right controls
+  //- a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+  //-   span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+  //-   span.sr-only Previous
+  //- a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+  //-   span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+  //-   span.sr-only Next
+
+  //-   h2 What to do now? What is a good way of describing the process?
+  //-   p JS collapse seems like a good way to go.
